@@ -1,3 +1,7 @@
+
+> [!NOTE]
+> This fork freezed the IMGT database at 2026-05-20 to avoid the network issue when IMGT is unavailable.
+
 ```
 ANARCI                                                 \\    //
 Antibody Numbering and Antigen Receptor ClassIfication  \\  //
