@@ -34,7 +34,7 @@ class CustomInstallCommand(install):
            shutil.rmtree("curated_alignments/")
            shutil.rmtree("muscle_alignments/")
            shutil.rmtree("HMMs/")
-           shutil.rmtree("IMGT_sequence_files/")
+           shutil.rmtree("IMGT_sequence_files/fastafiles/")
        except OSError:
            pass
 
