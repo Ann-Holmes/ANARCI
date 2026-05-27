@@ -36,8 +36,19 @@ ANARCI -i myfile.fasta
 
 ## Using uv
 
+ANARCI requires HMMER 3.3.2 at runtime. Install it with conda and ensure
+`hmmscan` is available in PATH:
+
 ```bash
-uv add https://github.com/Ann-Holmes/ANARCI
+conda create -n HMMER332 -c bioconda hmmer=3.3.2 -y
+conda activate HMMER332
+export PATH="$CONDA_PREFIX/bin:$PATH"
+```
+
+Then add ANARCI to your project:
+
+```bash
+uv add git+https://github.com/Ann-Holmes/ANARCI.git
 ```
 
 Or add a local checkout:
