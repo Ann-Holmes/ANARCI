@@ -13,8 +13,8 @@ jobs:
 
       - name: Install HMMER 3.3.2
         run: |
-          curl -sSLO https://github.com/EddyRivasLab/hmmer/archive/refs/tags/v3.3.2.tar.gz
-          tar xzf v3.3.2.tar.gz
+          curl -sSLO http://eddylab.org/software/hmmer/hmmer-3.3.2.tar.gz
+          tar xzf hmmer-3.3.2.tar.gz
           cd hmmer-3.3.2
           ./configure --prefix=/usr/local
           make -j$(nproc)
