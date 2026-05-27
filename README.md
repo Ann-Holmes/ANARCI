@@ -1,6 +1,8 @@
 
 > [!NOTE]
-> This fork freezed the IMGT database at 2026-05-20 to avoid the network issue when IMGT is unavailable.
+> This fork keeps the IMGT germline database up to date automatically.
+> A CI/CD pipeline runs daily at 00:00 (UTC+8) to pull the latest sequences
+> from IMGT and rebuild the HMM profiles.
 
 ```
 ANARCI                                                 \\    //
@@ -31,6 +33,20 @@ ANARCI -i myfile.fasta
 * Please note that while ANARCI uses alignment to species V and J germlines to determine the species of the antibody for purposes of numbering, we do not recommend using ANARCI as your primary species annotation tool
 
 # Installation
+
+## Using uv
+
+```bash
+uv add https://github.com/Ann-Holmes/ANARCI
+```
+
+Or add a local checkout:
+
+```bash
+uv add /path/to/ANARCI
+```
+
+## Using conda
 
 The easiest way to install ANARCI and its dependencies is using conda
 
